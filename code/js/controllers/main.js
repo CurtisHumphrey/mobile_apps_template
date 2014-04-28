@@ -6,6 +6,9 @@
     return Main_VM = (function() {
       function Main_VM() {
         this.title = ko.observable("Hello");
+        this.title.subscribe(function(new_value) {
+          return console.log("Value changed to " + new_value);
+        });
         return;
       }
 
