@@ -48,7 +48,7 @@ module.exports = (grunt) ->
         options:
           livereload: true
       views:
-        files: ['/ko_templates/**/*.html','index.html']
+        files: ['ko_templates/**/*.html','index.html']
         options:
           livereload: true
 
